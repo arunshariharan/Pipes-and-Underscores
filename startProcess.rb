@@ -18,3 +18,5 @@ parser = FileParser.new(unprocessed_file, account_number, destination, matcher)
 starting_line_number_to_parse = 0
 parser.parse_file(starting_line_number_to_parse)
 
+puts "\n \nFile sent for parsing. Please Check the Output folder for results.\n"
+
