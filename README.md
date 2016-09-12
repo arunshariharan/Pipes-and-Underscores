@@ -10,7 +10,6 @@ You work for a bank, which has recently purchased an ingenious machine to assist
   | _| _||_||_ |_   ||_||_|
   ||_  _|  | _||_|  ||_| _| 
                            
-
 ```
 Each entry is 4 lines long, and each line has 27 characters. The first 3 lines of each entry contain an account number written using pipes and underscores, and the fourth line is blank. Each account number should have 9 digits, all of which should be in the range 0-9. A normal file contains around 500 entries.
 
@@ -31,6 +30,23 @@ I have used Ruby to solve this challenge. The basic idea here is to identify eac
 The next step after reading the text file is to parse it - that is identify each sub-array into a recognisable digit.
 
 Once identified, I write it to a text file in the *Output* folder. 
+
+## Running the program ##
+
+* Ruby 1.9+ is required
+* Clone the repo, type in ***ruby startProcess.rb*** to start the processing of given input
+
+## Input ##
+
+* There are 3 types of input for the program. They can be found in ***Source*** folder. 
+* The ***big_data.txt*** contains nearly 9k lines of account number, while the ***data.txt*** file contains 500 lines as per the problem
+* The ***sample.txt*** file has a single account number in the specified format to test the parsing function of the program
+* To include any of these files, simply change them in the ***startProcess.rb*** file under *source* value
+
+## Output ##
+
+* The output, which is a file containing the parsed account numbers, can be found in the ***Output*** folder
+* Once again, you can change this by changing the *destination* value in ***startProcess.rb*** file
 
 ## Tests ##
 
